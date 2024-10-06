@@ -1,0 +1,24 @@
+package.json:
+            "type":"module
+            "dev":"nodemon src/index.js"
+
+npm i express dotenv passport passport-local cors bcryptjs jsonwebtoken mongoose speakeasy qrcode express-session (Dependencies)
+npm i nodemon --save--dev
+
+
+express:it is use as a framework for nodejs to build the rest API
+dotent:fetch the values from the .env file
+cors:we know that we use cors in order to allow api       to accessible for different origin
+bcryptjs:Hash our row password
+jsonwebtoken:in order to handle to authentication passport
+qrcode :it is a simple library that can generate a base 64 string.
+express-session:generate a session id for user
+passport:it is a simple middleware which provide authentication to node js.it ia also a library.
+passport-local:It is a authentication strategy
+speakeasy:it provide a two factor authentication for our node js application.it is a one time password generator.
+
+https://base64.guru/converter/decode/image
+this is the link when you can convert the qrocde image and 
+
+one extension name is https://chromewebstore.google.com/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai
+if you can try this then you can add the extension to your browser then you find the 6 digit code to verify the particular user.
