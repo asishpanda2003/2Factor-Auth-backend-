@@ -14,11 +14,11 @@ const app = express();
 
 //middleware
 const corsOptions = {
-  origin: ["http://localhost:5371"],
+  origin: ["http://localhost:3001"],
   credentials: true,
 };
 app.use(cors(corsOptions));
-app.use(express.json({ limit: "100mb" })); // Added 'express' before 'json' and 'urlencoded'
+app.use(express.json({ limit: "100mb" })); 
 app.use(express.urlencoded({ limit: "100mb", extended: true }));
 
 app.use(
