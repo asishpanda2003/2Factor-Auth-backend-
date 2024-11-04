@@ -1,6 +1,6 @@
 import express from "express";
-import session from "express-session"; // Corrected from "session" to "express-session"
-import passport from "passport"; // Corrected from "pass" to "passport"
+import session from "express-session"; 
+import passport from "passport"; 
 import dotenv from "dotenv";
 import cors from "cors";
 import dbConnect from "./configs/dbConnect.js";
@@ -35,10 +35,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-//routes
 app.use("/api/auth", authRoutes);
-
-//listen
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
